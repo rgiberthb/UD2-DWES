@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pruebas de codificación</title>
+</head>
+<body>
+  <h1>Pruebas de codificación</h1>
+
+  <h2>Formulario GET</h2>
+  <form action="/resultados" method="get">
+    <input type="text" name="texto">
+    <button type="submit">Enviar</button>
+  </form>
+
+  <h2>Formulario POST</h2>
+  <form action="/resultados" method="post">
+    <input type="text" name="texto">
+    <button type="submit">Enviar</button>
+  </form>
+
+  <h2>Enlaces</h2>
+  <p><a href="/ver?texto=Hola Mundo">Sin codificar: Hola Mundo</a></p>
+  <p><a href="/ver?texto=Hola%20Mundo">Codificado: Hola%20Mundo</a></p>
+</body>
+</html>
